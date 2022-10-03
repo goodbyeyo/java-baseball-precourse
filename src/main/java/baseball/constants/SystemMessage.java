@@ -1,4 +1,4 @@
-package baseball.domain.constants;
+package baseball.constants;
 
 public enum SystemMessage {
     INPUT_WAITING("숫자를 입력해주세요 : ");

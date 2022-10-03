@@ -1,6 +1,6 @@
 package baseball.domain.user;
 
-import baseball.domain.constants.SystemMessage;
+import baseball.constants.SystemMessage;
 import baseball.validation.GameValidation;
 import camp.nextstep.edu.missionutils.Console;
 

@@ -1,10 +1,10 @@
 package baseball.validation;
 
-import baseball.domain.constants.GameNumber;
+import baseball.constants.GameNumber;
 
 import java.util.*;
 
-import static baseball.domain.constants.ErrorMessage.*;
+import static baseball.constants.ErrorMessage.*;
 
 public class GameValidation {
 

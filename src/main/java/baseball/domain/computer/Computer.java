@@ -1,6 +1,6 @@
 package baseball.domain.computer;
 
-import baseball.domain.constants.GameNumber;
+import baseball.constants.GameNumber;
 import camp.nextstep.edu.missionutils.Randoms;
 
 import java.util.ArrayList;

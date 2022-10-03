@@ -1,4 +1,4 @@
-package baseball.domain.constants;
+package baseball.constants;
 
 public enum GameNumber {
     MIN_NUMBER(1),

@@ -16,11 +16,7 @@ public class UserNumber {
         }
         String inputNumber = number.toString();
 
-        GameValidation.validateNumberDuplicate(inputNumber);
-        GameValidation.validateNumberRange(inputNumber);
-        GameValidation.validateNumberSize(inputNumber);
-        GameValidation.validateNumberFormat(inputNumber);
-        GameValidation.validateNumberHasZero(inputNumber);
+        GameValidation.validationNumber(inputNumber);
 
         this.numbers = numbers;
     }

@@ -8,6 +8,15 @@ import static baseball.constants.ErrorMessage.*;
 
 public class GameValidation {
 
+    public static void validationNumber(String inputNumber) {
+
+        validateNumberDuplicate(inputNumber);
+        validateNumberRange(inputNumber);
+        validateNumberSize(inputNumber);
+        validateNumberFormat(inputNumber);
+        validateNumberHasZero(inputNumber);
+    }
+
     public static void validateNumberDuplicate(String inputNumber) throws IllegalArgumentException {
         Map<Character, Integer> map = new HashMap<>();
 

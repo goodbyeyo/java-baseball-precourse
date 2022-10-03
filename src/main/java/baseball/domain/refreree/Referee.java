@@ -7,11 +7,13 @@ import baseball.view.ResultView;
 public class Referee {
 
     private final String resultMessage;
+    private final Boolean isGameEnd;
 
     public Referee(UserNumber userNumber, JudgeNumber judgeNumber) {
         int strikes = countStrikes(userNumber, judgeNumber);
         int balls = countBalls(userNumber, judgeNumber);
         this.resultMessage = ResultView.getResultViewMessage(strikes, balls);
+        this.isGameEnd = strikes == GameNumber.NUMBER_LENGTH.getNumber();
     }
 
     public String getResultMessage() {
@@ -42,5 +44,9 @@ public class Referee {
             }
         }
         return balls;
+    }
+
+    public boolean isGameEnd() {
+        return this.isGameEnd;
     }
 }

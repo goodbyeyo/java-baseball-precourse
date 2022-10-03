@@ -17,12 +17,12 @@ public class ResultView {
             message.append(balls).append(JUDGE_BALL.getMessage());
         }
 
-        if (strikes != 0) {
-            message.append(strikes).append(JUDGE_STRIKE.getMessage());
-        }
-
         if (strikes != 0 && balls != 0) {
             message.append(" ");
+        }
+
+        if (strikes != 0) {
+            message.append(strikes).append(JUDGE_STRIKE.getMessage());
         }
 
         return message.toString();

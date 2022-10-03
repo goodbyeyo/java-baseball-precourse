@@ -57,4 +57,10 @@ public class GameValidation {
         }
     }
 
+    public static void validateNumberRestart(int input) {
+        if (input != GameNumber.GAME_RESTART.getNumber()
+                && input != GameNumber.GAME_END.getNumber()) {
+            throw new IllegalArgumentException(GAME_END_INPUT_ERR.getMessage());
+        }
+    }
 }

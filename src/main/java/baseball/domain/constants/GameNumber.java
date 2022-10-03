@@ -2,7 +2,8 @@ package baseball.domain.constants;
 
 public enum GameNumber {
     MIN_NUMBER(1),
-    MAX_NUMBER(9);
+    MAX_NUMBER(9),
+    NUMBER_LENGTH(3);
 
     private final int number;
 

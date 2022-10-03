@@ -7,7 +7,7 @@ import camp.nextstep.edu.missionutils.Console;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User {
+public class UserInput {
 
     public static List<Integer> getNumberList() throws IllegalArgumentException {
         String inputNumber = getUserInput();
@@ -26,4 +26,5 @@ public class User {
         System.out.print(SystemMessage.INPUT_WAITING.getMessage());
         return Console.readLine();
     }
+
 }
